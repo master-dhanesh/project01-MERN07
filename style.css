@@ -79,7 +79,8 @@ nav > ul > li > button,
     margin: 3% 0;
 }
 
-.p1-content > button {
+.p1-content > button,
+.p3-btn {
     padding: 13px 25px;
     background-color: transparent;
     border: 1px solid #6449f0;
@@ -205,6 +206,18 @@ select {
     padding: 1%;
 }
 
+/* .p3-btn-container {
+    text-align: center;
+} */
+
+.p3-btn {
+    display: block;
+    margin: auto;
+    margin-top: 8%;
+    font-size: 18px;
+    padding: 15px 30px;
+}
+
 /* -----------------p3 ends ----------------- */
 
 @media (min-width: 320px) and (max-width: 600px) {
@@ -238,7 +251,7 @@ select {
     }
 
     .search-plan {
-        display: block;
+        flex-direction: column;
         padding: 3%;
         width: 80%;
     }
@@ -252,5 +265,21 @@ select {
     }
     .search-plan > .date {
         margin: 5% 0;
+    }
+
+    .p3-cards {
+        flex-direction: column;
+        margin-top: 8%;
+    }
+
+    .p3-card {
+        margin: auto;
+        width: 75%;
+        margin-bottom: 10%;
+    }
+
+    .p3 > p {
+        margin-top: 2%;
+        width: 80%;
     }
 }
